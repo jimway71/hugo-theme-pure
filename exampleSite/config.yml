@@ -1,11 +1,11 @@
-baseURL: https://example.com/
+baseURL: http://hugo.otcg.org/
 theme: pure
-title: Pure theme for Hugo
+title: 点滴随记
 copyright: CC BY 4.0 CN
-defaultContentLanguage: en  # en/zh/...
+defaultContentLanguage: zh  # en/zh/...
 footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
-paginate: 7
+paginate: 9
 enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: ""      # UA-XXXXXXXX-X 
@@ -35,37 +35,50 @@ menu:
   main:
     - identifier: home
       name: Home
-      title: Home
+      title: 主页
       url: /
       weight: 1
 
     - identifier: archives
       name: Archives
-      title: Archives
+      title: 文档
       url: /posts/
       weight: 2
 
     - identifier: categories
-      name: Categories
-      title: Categories
-      url: /categories/
+      name: no
+      title:  
+#      url: 
       weight: 3
 
     - identifier: tags
       name: Tags
-      title: Tags
+      title: 标签
       url: /tags/
       weight: 4
 
     - identifier: about
       name: About
-      title: About
+      title: 关于
       url: /about/
       weight: 5
 
+    - identifier: Github
+      name: link
+      title: Github
+      url: http://github.com/
+      weight: 9
+
+#menu:
+#  link:
+#    - identifier: home
+#      name: Home
+#      title: 主页2
+#      url: /
+#      weight: 6
 
 params:
-  since: 2017
+  since: 2022
   dateFormatToUse: "2006-01-02"
   enablePostCopyright: true
   copyright_link: http://creativecommons.org/licenses/by/4.0/deed.zh
@@ -94,23 +107,25 @@ params:
     books: icon-book-fill
     links: icon-friendship
     about: icon-cup-fill
+    link: icon-link
 
   # profile
   profile:
     enabled: true # Whether to show profile bar
+#    avatar: avatar.png
     avatar: avatar.png
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-    author: xiaoheiAh
-    author_title: author title
-    author_description: Good Good Study, Day Day Up~
-    location: Shanghai, China
-    follow: https://github.com/xiaoheiAh
+    author: Jimway
+    author_title: 
+    author_description: 
+    location: 
+    follow: 
     # Social Links
     social:
       links:
-        github: https://github.com/xiaoheiAh
+        github: 
         # weibo: http://weibo.com/{yourid}
-        # twitter: https://twitter.com/
+        twitter: https://twitter.com/
         # facebook: /
         rss: /index.xml
       link_tooltip: false # enable the social link tooltip, options: true, false
@@ -120,13 +135,11 @@ params:
       enabled: true
       width: 40
       height: 40
-      url: favicon.ico
+#      url: favicon.ico
     title: Hugo # 页面title
-    favicon: favicon.ico
-    board: <p>enjoy~</p> # 公告牌
+#    favicon: favicon.ico
+    board: <p>~~~</p> # 公告牌
 
-  # Share
-  # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
   share:
     enable: true # 是否启用分享
     sites: weibo,qq,wechat,facebook,twitter # PC端显示的分享图标
@@ -154,21 +167,21 @@ params:
       visitor: false # Article reading statistic https://valine.js.org/visitor.html
 
   # Donate
-  donate:
-    enable: false
+  #donate:
+  #  enable: false
     # 微信打赏
-    wechatpay:
-      qrcode: donate/wechatpayimg.png
-      title: 微信支付
+#    wechatpay:
+#      qrcode: donate/wechatpayimg.png
+#      title: 微信支付
     # 支付宝打赏
-    alipay:
-      qrcode: donate/alipayimg.png
-      title: 支付宝
+#    alipay:
+#      qrcode: donate/alipayimg.png
+#      title: 支付宝
 
   # PV
   pv:
     busuanzi:
-      enable: false # 不蒜子统计
+      enable: true # 不蒜子统计
     leancloud:
       enable: false # leancloud统计
       app_id: # leancloud <AppID>
@@ -182,7 +195,7 @@ params:
 
   # config
   config:
-    skin: theme-black # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
+    skin: theme-white # theme color default is white. other type [theme-black,theme-blue,theme-green,theme-purple]
     layout: main-center # main-left main-center main-right
     excerpt_link: Read More
     toc: true
@@ -200,5 +213,5 @@ params:
     - tag_cloud
     - category
     - tag
-    - recent_posts
+#    - recent_posts
 

@@ -15,7 +15,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Instagram Simple Shortcode
 
-{{< instagram BGvuInzyFAe hidecaption >}}
+Instagram Removed  
 
 <br>
 
@@ -31,7 +31,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Twitter Simple Shortcode
 
-{{< twitter 1085870671291310081 >}}
+Twitter removed  
 
 <br>
 
